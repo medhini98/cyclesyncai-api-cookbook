@@ -1,6 +1,13 @@
+---
+title: CycleSyncAI
+description: Personalized health plans powered by Sonar API and Apple HealthKit
+sidebar_position: 1
+keywords: [health, fitness, menstrual cycle, LLM, Sonar API, personalization, iOS]
+---
+
 # CycleSyncAI: Personalized Health Plans Powered by Sonar API
 
-## 🚀 Overview
+## Overview
 
 **CycleSyncAI** is an iOS app designed to provide personalized **diet and workout recommendations** tailored to a woman’s **menstrual cycle phase**.
 
@@ -10,7 +17,7 @@ Unlike static wellness tools, **CycleSyncAI** leverages **Perplexity’s Sonar P
 
 ---
 
-## 🧠 Problem & Solution
+## Problem & Solution
 
 > **Why it matters:**  
 Most apps overlook the hormonal changes that affect women’s fitness and nutrition needs across their cycle, leaving users with generic advice.
@@ -19,7 +26,7 @@ Most apps overlook the hormonal changes that affect women’s fitness and nutrit
 
 ---
 
-## ✨ Features
+## Features
 
 - ✅ **Personalized diet & workout suggestions** per cycle phase
 - 🔄 Syncs with Apple HealthKit for real-time cycle tracking
@@ -31,7 +38,15 @@ Most apps overlook the hormonal changes that affect women’s fitness and nutrit
 
 ---
 
-## 💡 Motivation
+## Prerequisites
+
+- A macOS device with Xcode installed  
+- An iOS device (for HealthKit testing)  
+- Sonar Pro API access key from Perplexity
+
+---
+
+## Motivation
 
 > “I wanted a tailored regime for myself and couldn’t find it all in one place.”
 
@@ -39,7 +54,7 @@ Most apps overlook the hormonal changes that affect women’s fitness and nutrit
 
 ---
 
-## 🛠️ Repository Structure
+## Code Explanation
 CycleSyncAI.xcodeproj          → Xcode project file
 CycleSyncAI/                   → Source code
 ├── EatPlanViewController.swift        → Diet plan generation & display
@@ -54,7 +69,7 @@ Info.plist                   → Permissions & configurations
 
 ---
 
-## 🔧 Setup Instructions
+## Installation
 
 1. Clone the repo  
 2. Open in **Xcode**  
@@ -64,7 +79,7 @@ Info.plist                   → Permissions & configurations
 
 ---
 
-## 🧬 Sonar API Usage
+## Usage
 
 The app sends structured prompts to the **Sonar Pro API** including:
 
@@ -81,9 +96,7 @@ In return, it receives:
 
 These are parsed and rendered as styled HTML inside the app using WebViews.
 
----
-
-## 🎥 Demo Video
+### Demo Video
 
 Watch the full app walkthrough here: https://www.youtube.com/watch?v=R558uRLNvUM&t=2s.
 
@@ -91,7 +104,7 @@ Watch the full app walkthrough here: https://www.youtube.com/watch?v=R558uRLNvUM
 
 ---
 
-## ✅ Impact
+## Impact
 
 **CycleSyncAI** empowers women to make informed, body-aware decisions in daily life. The app supports better:
 
@@ -104,6 +117,12 @@ It also reduces decision fatigue with automatically prepared grocery lists and u
 
 ---
 
-## 🔗 Links
+## Limitations
+- LLM responses may take ~30–60s
+- Requires HealthKit permission
+
+---
+
+## Links
 
 - [GitHub Repository](https://github.com/medhini98/cyclesyncai-api-cookbook)
